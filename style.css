@@ -1,0 +1,47 @@
+@font-face{
+  font-family: "Mountain-Regular";
+  src: url("assets/Mountain-Regular.otf");
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+}
+p{
+  font-family: 'Raleway Dots', cursive;
+}
+.media-data li{
+  font-family: 'Raleway Dots', cursive;
+}
+#navlinks{
+  font-family: "Mountain-Regular";
+  font-size: 2em;
+}
+
+.media-container{
+  display: flex;
+  justify-content: space-between;
+}
+.media-content{
+  display: flex;
+  justify-content: space-evenly;
+}
+.icon{
+  height: 1em;
+}
+.media-links .published{
+  display: flex;
+}
+#logo img{
+  height: 5em;
+}
+.media-visual img {
+  height: 15em;
+}
