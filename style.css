@@ -2,9 +2,14 @@
   font-family: "Mountain-Regular";
   src: url("assets/Mountain-Regular.otf");
 }
+@font-face {
+  font-family: "PingFang SC";
+  src: url("assets/PingFang-ExtraLight.ttf");
+}
 body{
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 header{
   display: flex;
@@ -15,10 +20,13 @@ footer{
   justify-content: space-between;
 }
 p{
-  font-family: 'Raleway Dots', cursive;
+  font-family: "PingFang SC";
 }
+
+
+
 .media-data{
-  font-family: 'Raleway Dots', cursive;
+  font-family: "PingFang SC";
 }
 #navlinks{
   font-family: "Mountain-Regular";
@@ -40,8 +48,52 @@ p{
   display: flex;
 }
 #logo img{
-  height: 5em;
+  height: 3em;
 }
 .media-visual img {
   height: 15em;
+}
+
+/* logo border styling  */
+.BorderCorner_wrap{
+  text-align:center;
+}
+.BorderCorner {
+    border: 1px solid black;
+    display: inline-block;
+    margin: 25px auto;
+    padding: 20px;
+    position: relative;
+    width: auto;
+}
+.BorderCorner img {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+}
+.BorderCorner::before,
+.BorderCorner::after {
+  content: '';
+  position: absolute;
+  background: white;
+}
+
+.BorderCorner::before {
+  width: calc(100% + 50px + 4px - 90px);
+  height: calc(100% + 4px);
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.BorderCorner::after {
+  height: calc(100% + 50px + 4px - 90px);
+  width: calc(100% + 4px);
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
