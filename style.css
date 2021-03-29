@@ -8,7 +8,7 @@
 }
 
 /* content in body */
-.content-container{
+.content-container {
   display: flex;
   height: 100%;
 }
@@ -158,21 +158,25 @@ footer {
   justify-content: space-between;
   flex-shrink: 0;
 }
-.copyright{
+.copyright {
   padding: 1em;
 }
 .copyright p {
   margin: 0%;
 }
-.social-links{
+.social-links {
   padding: 2em;
   align-self: flex-end;
 }
 p {
   font-family: "PingFang SC";
 }
-.video-data{
+.video-data {
   height: 240px;
+}
+iframe {
+  width: 40vw;
+  height: 40vh;
 }
 
 .media-data {
@@ -197,11 +201,11 @@ p {
   padding: 0;
   margin-top: 0;
 }
-.media-data li{
+.media-data li {
   font-size: 1.4em;
   height: 1.1em;
 }
-.media-data ol{
+.media-data ol {
   padding-inline-start: 1.6em;
   margin-block-start: 0.5em;
 }
@@ -231,14 +235,17 @@ p {
   display: flex;
 }
 .published img:hover {
-  filter: invert(1)
+  filter: invert(1);
 }
-.published img{
-  padding-left: .2em;
+.published img {
+  padding-left: 0.2em;
   height: 0.9em;
 }
 #logo img {
   height: 3em;
+}
+#logo {
+  margin-left: 1em;
 }
 
 .media-visual img {
@@ -270,7 +277,7 @@ ul {
   width: 20vw;
   z-index: 1;
   top: 0;
-  left: 0;
+  padding-left: 1.5em;
   background-color: #e6e6e6;
   overflow-x: hidden;
   /* padding-top: 20px; */
@@ -318,7 +325,7 @@ ul {
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color: #e6e6e6
+  background-color: #e6e6e6;
   padding-left: 8px;
 }
 .dropdown-container a {
@@ -396,4 +403,3 @@ ul {
   visibility: visible;
   width: 100%;
 }
-
