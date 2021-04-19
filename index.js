@@ -31,19 +31,3 @@ for (let j = 0; j < mediaLink.length; j++) {
     media[j].classList.add("visible");
   });
 }
-
-//BORDER THING
-// $(document).ready(function () {
-//   $("a").hoverIntent(
-//     function () {
-//       $(this).removeClass("active");
-//       setTimeout(function () {
-//         $(this).addClass("temp");
-//       }, 1000);
-//     },
-//     function () {
-//       $(this).addClass("active");
-//       $(this).removeClass("temp");
-//     }
-//   );
-// });

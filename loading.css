@@ -8,6 +8,9 @@
 }
 body {
   background-color: #e6e6e6;
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s; /* Safari */
 }
 p {
   font-family: "PingFang SC";

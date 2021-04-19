@@ -1,9 +1,3 @@
-//MOVE LOGO
-
-// $(".logo-load").click(function () {
-//   $(this).animate({ left: "0vw", top: "0vh" }, 1000); // you can set left/top or you can do it with margins
-// });
-
 //toggle star
 var audioLink = document.getElementById("audio-link");
 audioLink.addEventListener("mouseenter", toggleAudioStarOn);
