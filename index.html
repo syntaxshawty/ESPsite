@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="loading.css"></link>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <title>Document</title>
-</head>
-<body>
-<header>
-  <!-- <div id="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="loading.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="load.js"></script>
+    <title>Document</title>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+    <header>
+      <!-- <div id="">
     <div class="BorderCorner_wrap">
       <div class="BorderCorner">
         <img src="../images/ESP-LOGO.png" alt="ESP Logo"/>
       </div>
     </div>
   </div> -->
-</header>
+    </header>
 
-<div class="container">
-  <img src="../images/ESP-LOGO.png" alt="ESP Logo" class="logo-load"/>
-	<div class="progress loading-bar">
-		<div class="progress-bar-new"></div>
-	</div>
-  <p id='load-count'></p>
-</div>
-<!--
+    <div class="container">
+      <img src="../images/ESP-LOGO.png" alt="ESP Logo" class="logo-load" />
+      <div class="progress loading-bar">
+        <div class="progress-bar-new"></div>
+      </div>
+      <p id="load-count">[0/100]</p>
+    </div>
+    <!--
 
   <div class="container">
       <div class="progress progress-striped">
@@ -48,6 +49,5 @@
       </div>
 
    -->
-</body>
-<script type="text/javascript" src="load.js"></script>
+  </body>
 </html>

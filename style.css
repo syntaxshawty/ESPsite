@@ -13,9 +13,19 @@
   height: 100%;
 }
 
+​ .shop-container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+}
+#shop-soon {
+  align-self: center;
+  font-family: "PingFang SC";
+}
+
 /* LANDING MOVEMENT */
 body.wheel {
-  left: 40vw;
+  left: 50vw;
 }
 .star {
   height: 0.7em;
@@ -28,7 +38,17 @@ body.wheel {
 #visual-star {
   display: none;
 }
+#shop-star {
+  display: none;
+}
 .wheel {
+  -moz-animation: cycle 18s linear infinite reverse;
+  -webkit-animation: cycle 18s linear infinite reverse;
+  animation: cycle 18s linear infinite reverse;
+  margin: 0;
+  position: relative;
+}
+.mainwheel {
   -moz-animation: cycle 18s linear infinite reverse;
   -webkit-animation: cycle 18s linear infinite reverse;
   animation: cycle 18s linear infinite reverse;
@@ -39,20 +59,18 @@ body.wheel {
   left: 30vw;
   bottom: 10vh;
 }
-/* #wheel:hover {
-  animation-play-state: paused;
-} */
+
 div .a {
   left: 100px;
   top: 0px;
 }
 div .b {
-  left: 450px;
-  top: 60px;
+  left: 300px;
+  top: 150px;
 }
 div .c {
-  left: 360px;
-  top: 0px;
+  left: 0px;
+  top: 150px;
 }
 a {
   text-decoration: none;
@@ -147,6 +165,9 @@ body {
   justify-content: space-between;
   background-color: #e6e6e6;
   height: 100vh;
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s; /* Safari */
 }
 
 header {
@@ -223,10 +244,12 @@ iframe {
   justify-content: space-around;
 }
 .media-content {
-  display: flex;
+  display: none;
   height: fit-content;
   padding: 1.5em;
-  border: 1px solid darkgray;
+  /* border: 1px solid darkgray; */
+  margin-right: 15vw;
+  position: fixed;
 }
 .icon {
   height: 1em;
@@ -277,7 +300,7 @@ ul {
   width: 20vw;
   z-index: 1;
   top: 0;
-  padding-left: 1.5em;
+  padding-left: 1em;
   background-color: #e6e6e6;
   overflow-x: hidden;
   /* padding-top: 20px; */
@@ -320,6 +343,10 @@ ul {
 .active {
   background-color: lightgrey;
   color: white;
+}
+
+.visible {
+  display: flex;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */

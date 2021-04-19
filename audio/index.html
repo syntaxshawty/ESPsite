@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="../style.css"></link>
-  <title>ESP</title>
-</head>
-<body>
-  <header>
-    <div id="logo">
-      <div class="BorderCorner_wrap">
-        <div class="BorderCorner">
-          <img src="../images/ESP-LOGO.png" alt="ESP Logo"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>ESP</title>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+    <header>
+      <div id="logo">
+        <div class="BorderCorner_wrap">
+          <div class="BorderCorner">
+            <img src="../images/ESP-LOGO.png" alt="ESP Logo" />
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id='navlinks'>
-      <a id='audio-true' href='./'>audio</a>
-      <a href="../visual">visual</a>
-    </div>
-  </header>
-  <div class='content-container'>
+      <div id="navlinks">
+        <a id="audio-true" href="./">audio</a>
+        <a href="../visual">visual</a>
+        <a href="../shop">shop</a>
+      </div>
+    </header>
 
+    <div class="content-container">
       <div class="menu-links">
         <div class="sidenav">
-          <a class="dropdown-btn" ><p>PROJECTS
-            <i class="fa fa-caret-down"></i></p></a>
+          <a class="dropdown-btn"
+            ><p>RELEASES <i class="fa fa-caret-down"></i></p
+          ></a>
           <div class="dropdown-container">
-            <a href="#"><p>Forever [2020]</p></a>
+            <a class="dropdown-link" href="#"><p>Forever [2020]</p></a>
+            <a class="dropdown-link" href="#"><p>AiiA [2021]</p></a>
           </div>
-          <a class="dropdown-btn" ><p>MIXES
-            <i class="fa fa-caret-down"></i></p></a>
+
+          <a class="dropdown-btn"
+            ><p>MIXES <i class="fa fa-caret-down"></i></p
+          ></a>
           <div class="dropdown-container">
-            <a href="./mixes.html"><p>[11.29.2020]</p></a>
+            <a class="dropdown-link" href="#"><p>INDIGO RADIO</p></a>
+            <a class="dropdown-link" href="#"><p>GODDEZZ TEMPLE</p></a>
+            <a class="dropdown-link" href="#"><p>ODYXXEY RADIO</p></a>
           </div>
         </div>
       </div>
 
-      <div class='media-container'>
-        <div class="media-content">
+      <div class="media-container">
+        <div id="Forever" class="media-content">
           <div class="media-visual">
-            <img src="../images/ESP-Forever.jpg" alt="ESP Forever front cover"/>
+            <img
+              src="../images/ESP-Forever.jpg"
+              alt="ESP Forever front cover"
+            />
           </div>
           <div class="media-data">
             <div>
               <h3>ESP - Forever</h3>
               <p>Tracklist</p>
-              <hr>
+              <hr />
 
               <ol>
                 <li>First Light</li>
@@ -63,45 +73,149 @@
 
             <div class="media-links">
               <div class="published">
-                <p>Self Published: </p>
-                <a class="spotify" href="https://open.spotify.com/album/41ZVcjCy19SruijxVQDHDA?si=BBQRmtquQwua-9MxfODQMA">
-                  <img src="../assets/spotify-black-white.png" alt="spotify" class="icon"/>
+                <p>Self Published:</p>
+                <a
+                  class="spotify"
+                  href="https://open.spotify.com/album/41ZVcjCy19SruijxVQDHDA?si=BBQRmtquQwua-9MxfODQMA"
+                >
+                  <img src="../assets/Spotify.png" alt="spotify" class="icon" />
                 </a>
-                <!-- <a class="apple" href="">
-                  <img src="" alt="apple"/>
-                </a> -->
-                <a class="soundcloud" href="https://soundcloud.com/espforever/sets/forever">
-                  <img src="../assets/soundcloud-black.png" alt="soundcloud" class="icon"/>
+                <a
+                  class="apple"
+                  href="https://music.apple.com/us/album/forever/1535996738"
+                >
+                  <img src="../assets/AppleMusic.png" alt="apple" />
                 </a>
-                <a class="bandcamp" href="https://espforever.bandcamp.com/album/forever">
-                  <img src="../assets/bandcamp-black.png" alt="bandcamp" class="icon"/>
+                <a
+                  class="soundcloud"
+                  href="https://soundcloud.com/espforever/sets/forever"
+                >
+                  <img
+                    src="../assets/Soundcloud.png"
+                    alt="soundcloud"
+                    class="icon"
+                  />
+                </a>
+                <a
+                  class="bandcamp"
+                  href="https://espforever.bandcamp.com/album/forever"
+                >
+                  <img
+                    src="../assets/Bandcamp.png"
+                    alt="bandcamp"
+                    class="icon"
+                  />
                 </a>
               </div>
               <div>
                 <p>Release date: 15.10.2020</p>
               </div>
-
             </div>
           </div>
         </div>
-  </div>
+        <div id="Aiia" class="media-content">
+          <div class="media-visual">
+            <img src="../images/Aiia.jpg" alt="AiiA front cover" />
+          </div>
+          <div class="media-data">
+            <div>
+              <h3>AiiA</h3>
+              <hr />
+            </div>
 
-  </div>
-  <footer>
-    <div class="copyright">
-      <p>&copy; extra sensory perception</p>
-      <p>YEAR [2021]</p>
+            <div class="media-links">
+              <div class="published">
+                <p>Self Published:</p>
+                <a
+                  class="spotify"
+                  href="https://open.spotify.com/track/6RjjQLl58ztDnll7cX9bZj?si=3XPvoSv8Q9SVp64fRUbhcg"
+                >
+                  <img src="../assets/Spotify.png" alt="spotify" class="icon" />
+                </a>
+                <a
+                  class="apple"
+                  href="https://music.apple.com/us/album/aiia-single/1556384545?uo=4&app=music&at=1001lry3&ct=dashboard"
+                >
+                  <img src="../assets/AppleMusic.png" alt="apple" />
+                </a>
+                <a
+                  class="soundcloud"
+                  href="https://soundcloud.com/espforever/aiia-1"
+                >
+                  <img
+                    src="../assets/Soundcloud.png"
+                    alt="soundcloud"
+                    class="icon"
+                  />
+                </a>
+
+                <a
+                  class="bandcamp"
+                  href="https://espforever.bandcamp.com/track/aiia"
+                >
+                  <img
+                    src="../assets/Bandcamp.png"
+                    alt="bandcamp"
+                    class="icon"
+                  />
+                </a>
+              </div>
+              <div>
+                <p>Release date: 03.12.2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="indigo-radio" class="media-content">
+          <div class="sc-visual">
+            <iframe
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/937984465&color=%23e6e6e6&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+          </div>
+        </div>
+        <div id="Goddezz-Temple" class="media-content">
+          <div class="sc-visual">
+            <iframe
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1019627425&color=%23e6e6e6&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+          </div>
+        </div>
+        <div id="GOdyxxey-Radio" class="media-content">
+          <div class="sc-visual">
+            <iframe
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/970571062&color=%23e6e6e6&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="social-links">
+    <footer>
+      <div class="copyright">
+        <p>&copy; extra sensory perception</p>
+        <p>YEAR [2021]</p>
+      </div>
+      <div class="social-links">
         <a class="email" href="mailto:espforever1998@gmail.com">
-          <img src="../assets/email-icon-black.png" alt="email" class="icon"/>
+          <img src="../assets/email-icon-black.png" alt="email" class="icon" />
         </a>
         <a class="insta" href="https://www.instagram.com/espforever/">
-          <img src="../assets/instagram-icon-black.png" alt="instagram" class="icon"/>
+          <img
+            src="../assets/instagram-icon-black.png"
+            alt="instagram"
+            class="icon"
+          />
         </a>
-    </div>
-  </footer>
-
-</body>
-<script type="text/javascript" src="../index.js"></script>
+      </div>
+    </footer>
+  </body>
+  <script type="text/javascript" src="../index.js"></script>
 </html>

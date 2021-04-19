@@ -1,6 +1,3 @@
-/* #logo img {
-  height: 3em;
-} */
 @font-face {
   font-family: "PingFang SC";
   src: url("../assets/PingFang-ExtraLight.ttf");
@@ -9,14 +6,15 @@
   font-family: "Mountain-Regular";
   src: url("assets/Mountain-Regular.otf");
 }
+body {
+  background-color: #e6e6e6;
+}
 p {
   font-family: "PingFang SC";
   font-size: 1.5em;
 }
 #logo {
   position: absolute;
-  /* left: 50vw;
-  top: 50vh; */
 }
 .logo-load {
   height: 18vh;

@@ -14,6 +14,24 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
+var logo = document.getElementById("logo");
+logo.addEventListener("click", () => {
+  window.location.href = "../home.html";
+});
+
+var mediaLink = document.getElementsByClassName("dropdown-link");
+var media = document.getElementsByClassName("media-content");
+console.log("media: ", media);
+
+for (let j = 0; j < mediaLink.length; j++) {
+  mediaLink[j].addEventListener("click", () => {
+    for (const el of media) {
+      el.classList.remove("visible");
+    }
+    media[j].classList.add("visible");
+  });
+}
+
 //BORDER THING
 // $(document).ready(function () {
 //   $("a").hoverIntent(

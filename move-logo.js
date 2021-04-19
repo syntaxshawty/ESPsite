@@ -36,3 +36,19 @@ function togglevisualStarOff() {
   var star = document.getElementById("visual-star");
   star.style.display = "none";
 }
+
+var shopLink = document.getElementById("shop-link");
+shopLink.addEventListener("mouseover", toggleshopStarOn);
+shopLink.addEventListener("mouseleave", toggleshopStarOff);
+
+function toggleshopStarOn() {
+  console.log("toggle on");
+  var star = document.getElementById("shop-star");
+  star.style.display = "inline";
+}
+
+function toggleshopStarOff() {
+  console.log("toggle off");
+  var star = document.getElementById("shop-star");
+  star.style.display = "none";
+}
