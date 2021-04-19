@@ -28,8 +28,8 @@ console.log("media: ", media);
 for (let j = 0; j < mediaLink.length; j++) {
   mediaLink[j].addEventListener("click", () => {
     for (const el of media) {
-      el.classList.remove("visible");
+      el.style.opacity = "0";
     }
-    media[j].classList.add("visible");
+    media[j].style.opacity = "1";
   });
 }

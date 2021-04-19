@@ -245,13 +245,17 @@ iframe {
   justify-content: space-around;
 }
 .media-content {
-  display: none;
+  display: flex;
   height: fit-content;
   padding: 1.5em;
   /* border: 1px solid darkgray; */
   margin-right: 15vw;
   position: fixed;
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s; /* Safari */
 }
+
 .icon {
   height: 1em;
 }
@@ -344,10 +348,6 @@ ul {
 .active {
   background-color: lightgrey;
   color: white;
-}
-
-.visible {
-  display: flex;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
