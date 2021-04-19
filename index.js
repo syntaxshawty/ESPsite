@@ -1,4 +1,4 @@
-//NAV DROPDOWN JS
+//NAV DROPDOWN
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
@@ -14,11 +14,13 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
+//Logo link to home
 var logo = document.getElementById("logo");
 logo.addEventListener("click", () => {
   window.location.href = "../home.html";
 });
 
+//toggles media on click
 var mediaLink = document.getElementsByClassName("dropdown-link");
 var media = document.getElementsByClassName("media-content");
 console.log("media: ", media);
