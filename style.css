@@ -49,6 +49,11 @@ body.wheel {
   margin: 0;
   position: relative;
 }
+.spin {
+  -moz-animation: cycle 3s linear infinite;
+  -webkit-animation: cycle 3s linear infinite;
+  animation: cycle 3s linear infinite;
+}
 .mainwheel {
   -moz-animation: cycle 18s linear infinite reverse;
   -webkit-animation: cycle 18s linear infinite reverse;
