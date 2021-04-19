@@ -29,7 +29,9 @@ for (let j = 0; j < mediaLink.length; j++) {
   mediaLink[j].addEventListener("click", () => {
     for (const el of media) {
       el.style.opacity = "0";
+      el.style.zIndex = "-5";
     }
     media[j].style.opacity = "1";
+    media[j].style.zIndex = "100";
   });
 }
