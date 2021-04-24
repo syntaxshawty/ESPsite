@@ -13,7 +13,7 @@
       <div id="logo">
         <div class="BorderCorner_wrap">
           <div class="BorderCorner">
-            <img src="../images/ESP-LOGO.png" alt="ESP Logo" />
+            <img id="logo-image" src="../images/ESP-LOGO.png" alt="ESP Logo" />
           </div>
         </div>
       </div>
@@ -38,15 +38,16 @@
 
       <div class="media-container">
         <div class="media-content">
-          <div class="media-visual">
+          <div class="video media-visual">
             <iframe
+              allow="fullscreen"
               class="youtube"
               src="https://www.youtube.com/embed/-nc4ajRwfvA"
             ></iframe>
           </div>
           <div class="video-data media-data">
             <div>
-              <h3>ESP - Maltodextrin [Official Video]</h3>
+              <p class="title">Maltodextrin [Official Video]</p>
               <p>Credits</p>
               <hr />
               <p>Film : Donovan Lally + Zephyr Maliki</p>
@@ -74,10 +75,16 @@
     </div>
     <footer>
       <div class="copyright">
+        <button id="lock">
+          <img src="../assets/Locked.png" alt="lock" class="icon" />
+        </button>
+        <input id="secret-input" class="invisible" />
         <p>&copy; extra sensory perception</p>
-        <p>YEAR [2021]</p>
       </div>
       <div class="social-links">
+        <a class="twitter" href="https://twitter.com/esp4ver?s=11">
+          <img src="../assets/twitter.png" alt="twitter" class="icon" />
+        </a>
         <a class="email" href="mailto:espforever1998@gmail.com">
           <img src="../assets/email-icon-black.png" alt="email" class="icon" />
         </a>

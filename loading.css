@@ -11,6 +11,10 @@ body {
   opacity: 0;
   transition: opacity 2s;
   -webkit-transition: opacity 2s; /* Safari */
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  margin: auto;
 }
 p {
   font-family: "PingFang SC";

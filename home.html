@@ -8,48 +8,40 @@
     <link rel="icon" type="image/png" href="../images/ESP-LOGO-favio.png" />
     <title>ESP</title>
   </head>
-  <body onload="document.body.style.opacity='1'">
+  <body id="home" onload="document.body.style.opacity='1'">
     <header>
       <div id="logo">
         <div class="BorderCorner_wrap">
           <div class="BorderCorner">
-            <img src="../images/ESP-LOGO.png" alt="ESP Logo" />
+            <img id="logo-image" src="../images/ESP-LOGO.png" alt="ESP Logo" />
           </div>
         </div>
       </div>
     </header>
 
-    <div class="mainwheel">
-      <div class="wheel a fa">
-        <a href="../audio">
-          <span id="audio-link" class="landing-el">audio</span>
-        </a>
-        <img id="audio-star" class="star spin" src="../images/Star.png" />
-      </div>
+    <div class="wheel-container">
+      <div class="mainwheel">
+        <div class="wheel a fa">
+          <a href="../audio">
+            <span id="audio-link" class="landing-el">audio</span>
+          </a>
+          <img id="audio-star" class="star spin" src="../images/Star.png" />
+        </div>
 
-      <div class="wheel c fa">
-        <a href="./visual">
-          <span id="visual-link" class="landing-el">visual</span>
-        </a>
-        <img id="visual-star" class="star spin" src="../images/Star.png" />
-      </div>
+        <div class="wheel c fa">
+          <a href="./visual">
+            <span id="visual-link" class="landing-el">visual</span>
+          </a>
+          <img id="visual-star" class="star spin" src="../images/Star.png" />
+        </div>
 
-      <div class="wheel b fa">
-        <a href="../shop">
-          <span id="shop-link" class="landing-el">shop</span>
-        </a>
-        <img id="shop-star" class="star spin" src="../images/Star.png" />
+        <div class="wheel b fa">
+          <a href="../shop">
+            <span id="shop-link" class="landing-el">shop</span>
+          </a>
+          <img id="shop-star" class="star spin" src="../images/Star.png" />
+        </div>
       </div>
-      <!-- <div>
-      <h1 class="wheel a fa landing-el">audio</h1>
-      <img class='star' src='../images/Star.png' />
-    </div> -->
-
-      <!-- <h1 class="wheel b fa landing-el">store</h1> -->
-      <!-- <div>
-      <h1 class="wheel c fa landing-el">visual</h1>
-      <img class='star' src='../images/Star.png' />
-    </div> -->
     </div>
 
     <!-- <div class="container">
@@ -60,10 +52,16 @@
 
     <footer>
       <div class="copyright">
+        <button id="lock">
+          <img src="../assets/Locked.png" alt="lock" class="icon" />
+        </button>
+        <input id="secret-input" class="invisible" />
         <p>&copy; extra sensory perception</p>
-        <p>YEAR [2021]</p>
       </div>
       <div class="social-links">
+        <a class="twitter" href="https://twitter.com/esp4ver?s=11">
+          <img src="../assets/twitter.png" alt="twitter" class="icon" />
+        </a>
         <a class="email" href="mailto:espforever1998@gmail.com">
           <img src="../assets/email-icon-black.png" alt="email" class="icon" />
         </a>

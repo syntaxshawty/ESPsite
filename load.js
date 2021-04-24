@@ -2,6 +2,8 @@
 
 const load = () => {
   var elem = document.getElementById("load-count");
+  var bar = document.getElementsByClassName("load-bar");
+  bar[0].classList.add("progress-bar-new");
   console.log(elem);
   var width = 0;
   var id = setInterval(frame, 50);

@@ -46,3 +46,16 @@ function toggleshopStarOff() {
   var star = document.getElementById("shop-star");
   star.style.display = "none";
 }
+
+var lock = document.getElementById("lock");
+var input = document.getElementById("secret-input");
+lock.addEventListener("click", () => {
+  input.classList.toggle("invisible");
+});
+
+input.addEventListener("keyup", function onEvent(event) {
+  if (event.key === "Enter") {
+    console.log("entered: ", input.value);
+    return false;
+  }
+});
