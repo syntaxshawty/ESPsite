@@ -482,6 +482,11 @@ ul {
 #secret-unlocked {
   height: 20vh;
 }
+.secret-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
 /* SAFARI STYLING  */
 /* @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
   header {
