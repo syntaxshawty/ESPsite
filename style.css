@@ -199,7 +199,7 @@ footer {
   margin: 0%;
 }
 .social-links {
-  padding: 2em;
+  padding: 0em 2em 2em 0em;
   align-self: flex-end;
 }
 p {
@@ -257,7 +257,7 @@ iframe {
   flex-direction: column; */
   align-items: flex-end;
   margin: 4px 1em 15px 1em;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 .mobile-category {
   display: none;
@@ -476,27 +476,30 @@ ul {
 }
 
 /* LOCK */
-#lock {
-  /* padding: 0.4em; */
-}
 .invisible {
   display: none;
 }
-
+#secret-unlocked {
+  height: 20vh;
+}
 /* SAFARI STYLING  */
-@media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+/* @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
   header {
     padding-bottom: 2em;
   }
-  /*
-      Define here the CSS styles applied only to Safari browsers
-      (any version and any device)
-     */
-}
+  #lock {
+    padding: 5px 6px;
+    border-width: thin;
+    border-radius: 3px;
+  }
+} */
 @media (max-width: 768px) {
   #navlinks {
     display: flex;
     flex-direction: column;
+  }
+  #navlinks > a:hover::before {
+    visibility: hidden;
   }
   .dropdown-container {
     display: none;
@@ -531,9 +534,9 @@ ul {
     width: auto;
     position: relative;
   }
-  .video {
+  /* .video {
     padding-top: 15vh;
-  }
+  } */
   .media-visual > img {
     width: 80vw;
   }
@@ -541,7 +544,6 @@ ul {
     background: rgba(255, 255, 255, 0.5);
     opacity: 0;
     display: flex;
-    /* z-index: 500; */
     position: absolute;
     height: 100%;
     width: 80vw;
@@ -549,9 +551,15 @@ ul {
     justify-content: space-around;
     transition: opacity 2s;
     -webkit-transition: opacity 2s; /* Safari */
+    /* z-index: -500; */
+    pointer-events: none;
+    cursor: default;
   }
   .fade {
     opacity: 1;
+    z-index: 500;
+    pointer-events: initial;
+    cursor: pointer;
     transition: opacity 2s;
     -webkit-transition: opacity 2s;
   }
@@ -587,6 +595,21 @@ ul {
     position: fixed;
     width: 100vw;
     bottom: 0;
+  }
+  footer p {
+    font-size: small;
+  }
+}
+
+@media (max-width: 320px) {
+  .mobile-media-links img {
+    height: 4em;
+  }
+  .media-content {
+    justify-content: center;
+  }
+  .mobile-category {
+    padding: 0 1.5em;
   }
 }
 
@@ -660,5 +683,11 @@ ul {
   }
   .media-data ol {
     margin-left: 0.5em;
+  }
+  #lock {
+    padding: 5px 6px;
+    border-width: thin;
+    border-radius: 3px;
+    background-color: #e6e6e6;
   }
 }

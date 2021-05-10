@@ -55,7 +55,13 @@ lock.addEventListener("click", () => {
 
 input.addEventListener("keyup", function onEvent(event) {
   if (event.key === "Enter") {
-    console.log("entered: ", input.value);
+    if (input.value === "password") {
+      input.value = "";
+      window.location.href = "./secret.html";
+    } else {
+      input.value = "";
+    }
+    // console.log("entered: ", input.value);
     return false;
   }
 });
